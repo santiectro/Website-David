@@ -1,0 +1,48 @@
+.left {
+    text-align: left;
+    margin-left: 4em;
+}
+
+.me-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5em;
+    border-bottom: 1px solid red;
+    margin-bottom: 5em;
+}
+
+.me-section img {
+    width: 900px;
+    object-fit: contain;
+    margin-top: -65px;
+}
+
+.me-section div {
+    width: 500px;
+}
+
+.me-section div p {
+    font-size: 1.35em;
+    font-family: 'Nunito', sans-serif;
+}
+
+.me-section button {
+    margin-top: 4em;
+    font-size: 1.5em;
+    font-family: 'Nunito', sans-serif;
+    padding: .5em 2em;
+    background-color: white;
+    background: linear-gradient(to right, black 0%, black 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .4s;
+    border-radius: 8px;
+}
+
+.me-section button:hover {
+    cursor: pointer;
+    background-position:0 0;
+    color: white;
+    
+}

@@ -1,11 +1,14 @@
 import React from "react"
+import photo from "../Images/me-profile.jpeg"
+import './Header.css';
 
 export default function Header () {
     return (
         <nav>
-            <div>
-                <img src="../Images/me-profile.jpeg" />
-                <p>David Barahona</p>
+            <div id="header">
+                
+                <p>&lt;david-barahona&gt;</p>
+                
             </div>
             <ul>
                 <li>Home</li>
