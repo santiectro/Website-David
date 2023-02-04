@@ -1,5 +1,4 @@
 import React from "react"
-import photo from "../Images/me-profile.jpeg"
 import './Header.css';
 
 export default function Header () {
