@@ -1,6 +1,7 @@
 .left {
     text-align: left;
     margin-left: 4em;
+    font-size: 2.3em;
 }
 
 .me-section {
@@ -27,7 +28,7 @@
 }
 
 .me-section img {
-    width: 500px;
+    width: 550px;
     object-fit: contain;
 }
 
