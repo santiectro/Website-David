@@ -27,7 +27,7 @@
 }
 
 .me-section img {
-    width: 900px;
+    width: 700px;
     object-fit: contain;
 }
 
@@ -77,4 +77,11 @@
     transition: background-position .4s;
     border-radius: 8px;  
     color: black;
+}
+
+.text-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
