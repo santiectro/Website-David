@@ -12,6 +12,7 @@
     margin: 0;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,7 +32,11 @@ nav img {
 }
 
 nav div{
-    
+    display: flex;
+}
+
+nav div p {
+    margin-right: 1.5em;
 }
 
 nav ul {
@@ -46,3 +51,105 @@ nav li {
 li:nth-child(4) {
     margin-right: 1em;
 }
+
+input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #001524;
+    align-self: center;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+input::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+
+}
+
+input:checked {
+    background-color: #9DC7C8;
+}
+
+input:checked::after {
+    left: 70%;
+}
+
+.dark {
+    background-color: #212434;
+    color: #d7d7d7;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.me-section button {
+    margin-top: 4em;
+    font-size: 1.5em;
+    font-family: 'Nunito', sans-serif;
+    padding: .5em 2em;
+    background-color: white;
+    background: linear-gradient(to right, black 0%, black 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .4s;
+    border-radius: 8px;
+    color: black;
+}
+
+
+
+ul a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    
+  }
+
+  ul a:hover {
+    background-position: 0 100%;
+  }
+
+  .dark a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to right, #03DAC5, #03DAC5 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .dark a:hover {
+    background-position: 0 100%;
+  }
+ 

@@ -3,12 +3,15 @@ import photo from "../Images/password.jpg"
 import "./Project.css"
 import dashboard from "../Images/dashboard.png"
 import quiz from "../Images/quiz.jpg"
-
+import { Context } from "../Context"
 
 
 export default function Projects () {
+
+    const {Lightmode} = React.useContext(Context) // use it somewhere
+
     return (
-        <>
+        <div id="all-projects"className={`${Lightmode ? "light" : "dark"}`}>
             <h4 className="center" >Less talk, more code</h4>
             <div className="project-holder" >
                 <div className="project-attributes" >
@@ -44,7 +47,7 @@ export default function Projects () {
                     </ul>
                     <button> Go behind the scenes </button>
                 </div>
-                <img  src={dashboard} alt="password generator app" />
+                <img  src={dashboard} alt="dashboard app" />
             </div>
             <div className="project-holder final" >
                 <div className="project-attributes" >
@@ -62,8 +65,8 @@ export default function Projects () {
                     </ul>
                     <button> Go behind the scenes </button>
                 </div>
-                <img  src={quiz} alt="password generator app" />
+                <a href="https://spiffy-sunflower-d5020e.netlify.app/"><img  src={quiz} alt="quiz app" /></a>
             </div>
-        </>
+        </div>
     )
 }

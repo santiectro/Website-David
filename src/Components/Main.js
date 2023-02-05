@@ -1,19 +1,22 @@
 import React from "react"
 import photo from "../Images/me-profile.jpeg"
 import "./Main.css"
+import { Context } from "../Context"
+
 
 export default function Main () {
 
     //In p tag if hover or something say that in path to become a full stack developer
+    const {Lightmode} = React.useContext(Context)
 
     return (
         <>
-            <div className="main-section">
+            <div className={`main-section ${Lightmode? "light" : "dark"} `}>
                 <img src={photo} alt="serious david"/>
                 <h2>Bonjour, je m'appelle David</h2>
                 <p>Front-End Developer</p> 
             </div>
-            <div className="hero-component">
+            <div className={`hero-component ${Lightmode? "light" : "dark"}`}>
                 <h3>Attributes</h3>
                 <div className="container">
                     <div>

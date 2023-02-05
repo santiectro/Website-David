@@ -4,14 +4,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import "./Contact.css"
+import { Context } from "../Context"
 
 export default  function Contact() {
 
     library.add(fab, faCheckSquare, faCoffee)
 
+    const {Lightmode} = React.useContext(Context)
+
+
     return (
         <>
-            <div className="contact">
+            <div className={`contact  ${ Lightmode ? "light" : "dark"  }`} id="contact-me" >
                 <h3>Contact</h3>
                 <p>
                     Deserunt excepteur eu sit voluptate cillum proident culpa dolore excepteur labore minim ea minim. 

@@ -1,13 +1,18 @@
 import React from "react"
 import "./Me.css"
 import Jane from "../Images/jane.jpg"
+import { Context } from "../Context"
 
 export default function Me () {
+
+    const {Lightmode} = React.useContext(Context) // use it somewhere
+
     return (
-        <>
-            <h4 className="left">Too much code, who am I?</h4>
-            <div className="me-section" >
-                <img src={Jane} alt="Jane smiling" />
+        <div id="about-me" > 
+            <div className="whole">
+                <h4 className="left">Too much code, who am I?</h4>
+                <div className="me-section" >
+                    <img src={Jane} alt="Jane smiling" />
                 <div>
                     <p>
                         Est cupidatat consequat ea ea eiusmod Lorem esse irure et ullamco est laborum reprehenderit. 
@@ -26,9 +31,10 @@ export default function Me () {
                         mollit proident. Aliquip aliquip voluptate aute minim esse deserunt tempor consectetur. Officia ea amet 
                         fugiat elit.
                     </p>    
-                    <button> Check my resume </button>
+                    <button className={`${Lightmode ? "light" : "dark"}`}> Check my resume </button>
                 </div>
             </div>
-        </>
+    </div>
+        </div>
     )
 }

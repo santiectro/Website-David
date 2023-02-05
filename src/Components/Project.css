@@ -33,7 +33,11 @@ h5 {
 h4 {
     text-align: center;
     font-size: 3.1em;
-    margin-bottom: 1em;
+}
+
+#all-projects h4 {
+    padding-top: 1.5em ;
+    padding-bottom: 1.5em;
 }
 
 img {
@@ -59,11 +63,20 @@ ul{
     border-radius: 15px;
 }
 
+.dark .project-attributes button {
+    background: linear-gradient(to right, #BB86FC 0%, #BB86FC 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
+
 .project-attributes button:hover {
     background-position:0 0;
     color: white;
     cursor: pointer;
+    
 }
+
 
 .project-holder img:hover {
     transform: translateY(-7px);
@@ -71,10 +84,14 @@ ul{
 }
 
 .final {
-    border-bottom: 1px solid red;
-    margin-bottom: 7em;
+    border-bottom: 3px solid grey;
 }
 
 .center {
     text-align: center;
+}
+
+#all-projects.dark {
+    background-color: #142634;
+    color: silver;
 }

@@ -4,12 +4,26 @@
 }
 
 .me-section {
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 5em;
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid red;
     margin-bottom: 5em;
+}
+
+.dark .whole {
+    background-color: #003049 ;
+    
+}
+
+.whole {
+    padding-top: 4em;
+}
+
+.dark .me-section {
+    border-bottom: 3px solid gray;
 }
 
 .me-section img {
@@ -38,6 +52,7 @@
     background-position: 100% 0;
     transition: background-position .4s;
     border-radius: 8px;
+    color: black;
 }
 
 .me-section button:hover {
@@ -45,4 +60,22 @@
     background-position:0 0;
     color: white;
     
+}
+
+.dark button:hover {
+    color: black;
+}
+
+ .dark button {
+    margin-top: 4em;
+    font-size: 1.5em;
+    font-family: 'Nunito', sans-serif;
+    padding: .5em 2em;
+    background-color: white;
+    background: linear-gradient(to right, #fcbf49 0%, #fcbf49 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .4s;
+    border-radius: 8px;  
+    color: black;
 }
