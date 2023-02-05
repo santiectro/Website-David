@@ -60,7 +60,7 @@ ul{
     background-size: 200% 100%;
     background-position: 100% 0;
     transition: background-position .4s;
-    border: none;
+    border: 1px solid #c32f27 ;
     border-radius: 15px;
 }
 
