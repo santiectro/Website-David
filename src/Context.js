@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 
 const Context = React.createContext()
 
@@ -6,8 +6,7 @@ const Context = React.createContext()
 function ContextProvider({children}) {
     const [Lightmode, setLightMode] = useState(true)
 
-    function toggleMode() {
-        
+    function toggleMode() {  
         setLightMode(prev => !prev)
     }
 

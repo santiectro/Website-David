@@ -11,7 +11,7 @@ export default function Main () {
 
     return (
         <>
-            <div className={`main-section ${Lightmode? "light" : "dark"} `}>
+            <div className={`main-section ${Lightmode? "light" : "dark"} `} id="home">
                 <img src={photo} alt="serious david"/>
                 <h2>Bonjour, je m'appelle David</h2>
                 <p>Front-End Developer</p> 

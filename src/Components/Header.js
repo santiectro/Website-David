@@ -19,7 +19,7 @@ export default function Header () {
 
             </div>
             <ul >
-                <a href="#" className={ Lightmode ? "light" : "dark"} > <li> Home </li> </a> 
+                <a href="#home" className={ Lightmode ? "light" : "dark"} > <li> Home </li> </a> 
                 <a href="#all-projects" className={ Lightmode ? "light" : "dark"} > <li>Projects</li> </a> 
                 <a href="#about-me" className={ Lightmode ? "light" : "dark"} > <li>About</li> </a> 
                 <a href="#contact-me" className={ Lightmode ? "light" : "dark"} > <li>Contact</li> </a> 
