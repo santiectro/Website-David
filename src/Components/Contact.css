@@ -1,7 +1,7 @@
 .contact {
     text-align: center;
-    padding: 0 25em;
-    padding-bottom: 5em  ;
+    padding: 0 25em 5em;
+    
 }
 
 .contact h3 {
@@ -12,6 +12,8 @@
 .contact p {
     font-size: 1.7em;
     margin-bottom: 2em;
+    letter-spacing: 0.2em;
+    line-height: 1.9em;
 }
 
 .contact ul {
