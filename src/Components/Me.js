@@ -22,10 +22,10 @@ export default function Me () {
                         about a guy coding some challenges in Ruby, never stopped since, I also consider
                         myself a music lover and as a porpuse of 2023 I decided to learn the piano
                     </p>
-                    <button type="submit" onClick={() => window.open(Pdf)}>Check my resume</button>
-                </div>
+                    <button className={`${Lightmode ? "light" : "dark"}`} type="submit" onClick={() => window.open(Pdf)}> Check my resume </button>
                 </div>
             </div>
+    </div>
         </div>
     )
 }
