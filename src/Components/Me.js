@@ -2,6 +2,7 @@ import React from "react"
 import "./Me.css"
 import Jane from "../Images/jane.jpg"
 import { Context } from "../Context"
+import Pdf from "../david-resume.pdf"
 
 export default function Me () {
 
@@ -21,10 +22,10 @@ export default function Me () {
                         about a guy coding some challenges in Ruby, never stopped since, I also consider
                         myself a music lover and as a porpuse of 2023 I decided to learn the piano
                     </p>
-                    <button className={`${Lightmode ? "light" : "dark"}`}> Check my resume </button>
+                    <button type="submit" onClick={() => window.open(Pdf)}>Check my resume</button>
+                </div>
                 </div>
             </div>
-    </div>
         </div>
     )
 }
