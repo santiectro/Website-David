@@ -15,7 +15,7 @@ export default function Header () {
                 
                 <p>&lt;david-barahona&gt;</p>
                 <p>{Lightmode ? "Dark" : "Light"} Mode </p>
-                <input type="checkbox" onClick={toggleMode} />  
+                <input type="checkbox" onClick={toggleMode} checked={Lightmode ? false : true} />  
 
             </div>
             <ul >

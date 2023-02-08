@@ -13,7 +13,7 @@ export default function Me () {
             <div className="whole">
                 <h4 className="left">Too much code, who am I?</h4>
                 <div className="me-section" >
-                    <img src={Jane} alt="Jane smiling" />
+                    <img src={Jane} alt="Jane smiling" className="left"/>
                 <div className="text-me">
                     <p>
                         My name is David Barahona, I'm from Colombia currently living in Canada 

@@ -6,7 +6,7 @@
 
 .me-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     padding-bottom: 5em;
     border-bottom: 3px solid red;
@@ -29,6 +29,8 @@
 .me-section img {
     width: 550px;
     object-fit: contain;
+    text-align: right;
+    margin-right: 5em;
 }
 
 .me-section div {
@@ -65,7 +67,7 @@
 }
 
  .dark button {
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 1.5em;
     font-family: 'Nunito', sans-serif;
     padding: .5em 2em;

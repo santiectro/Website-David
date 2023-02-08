@@ -17,9 +17,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2em;
+    padding: 2em 2em 0;
     font-size: 1.6em;
     font-weight: 400;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+    box-sizing: border-box;
 }
 
 nav img {
@@ -137,19 +142,22 @@ ul a {
   .dark a {
     position: relative;
     display: inline-block;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 600;
     color: white;
     overflow: hidden;
     background: linear-gradient(to right, #03DAC5, #03DAC5 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 275ms ease;
   }
   .dark a:hover {
     background-position: 0 100%;
+  }
+
+  a {
+    text-decoration:none
   }
  

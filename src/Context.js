@@ -8,6 +8,7 @@ function ContextProvider({children}) {
 
     function toggleMode() {  
         setLightMode(prev => !prev)
+        document.getElementById("header-btn").checked = Lightmode
     }
 
     return (

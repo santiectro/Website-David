@@ -6,7 +6,8 @@ import Me from './Components/Me';
 import Contact from './Components/Contact';
 import React from 'react';
 import { Context } from './Context';
-
+import {Routes, Route} from "react-router-dom"
+import WebsiteInfo from './Components/WebsiteInfo';
 
 function App() {
 
@@ -15,11 +16,22 @@ function App() {
 
   return (
     <div className={Lightmode ? "light" : "dark"}>
-        <Header />
-        <Main />
-        <Projects />
-        <Me />
-        <Contact />
+      <Routes>
+        <Route exact path="/" element={
+          <>
+            <Header/>
+            <Main />
+            <Projects />
+            <Me />
+            <Contact />
+          </>
+          
+        }/>
+        <Route path='/fuck' element = {
+          <WebsiteInfo />
+        }/>
+          
+      </Routes>    
     </div>  
   );
 }

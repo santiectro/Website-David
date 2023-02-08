@@ -4,6 +4,7 @@ import "./Project.css"
 import dashboard from "../Images/dashboard.png"
 import quiz from "../Images/quiz.jpg"
 import { Context } from "../Context"
+import { Link } from "react-router-dom"
 
 
 export default function Projects () {
@@ -12,6 +13,9 @@ export default function Projects () {
 
     return (
         <div id="all-projects"className={`${Lightmode ? "light" : "dark"}`}>
+            
+
+
             <h4 className="center" >Less talk, more code</h4>
             <div className="project-holder" >
                 <div className="project-attributes" >
@@ -27,7 +31,9 @@ export default function Projects () {
                         <li>JavaScript</li>
                         <li>React</li>
                     </ul>
-                    <button> Go behind the scenes </button>
+                    <Link to="/fuck">
+                        <button> Go behind the scenes </button>
+                    </Link>
                 </div>
                 <img  src={photo} alt="password generator app" />
             </div>
@@ -45,7 +51,10 @@ export default function Projects () {
                         <li>JavaScript</li>
                         <li>React</li>
                     </ul>
-                    <button> Go behind the scenes </button>
+                    <Link>
+                        <button> Go behind the scenes </button>
+                    </Link>
+                    
                 </div>
                 <img  src={dashboard} alt="dashboard app" />
             </div>
@@ -63,7 +72,9 @@ export default function Projects () {
                         <li>JavaScript</li>
                         <li>React</li>
                     </ul>
-                    <button> Go behind the scenes </button>
+                    <Link to="/fuck">
+                        <button> Go behind the scenes </button>
+                    </Link>
                 </div>
                 <a href="https://spiffy-sunflower-d5020e.netlify.app/"><img  src={quiz} alt="quiz app" /></a>
             </div>
