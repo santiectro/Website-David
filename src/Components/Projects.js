@@ -1,7 +1,7 @@
 import React from "react"
 import photo from "../Images/password.jpg"
 import "./Project.css"
-import dashboard from "../Images/dashboard.png"
+import movie from "../Images/movie.jpg"
 import quiz from "../Images/quiz.jpg"
 import { Context } from "../Context"
 import { Link } from "react-router-dom"
@@ -51,12 +51,12 @@ export default function Projects () {
                         <li>JavaScript</li>
                         <li>React</li>
                     </ul>
-                    <Link>
+                    <Link to="/fuck">
                         <button> Go behind the scenes </button>
                     </Link>
                     
                 </div>
-                <img  src={dashboard} alt="dashboard app" />
+                <a href="https://candid-sprinkles-bc592a.netlify.app/"><img  src={movie} alt="movie watchlist app" /></a>
             </div>
             <div className="project-holder final" >
                 <div className="project-attributes" >
